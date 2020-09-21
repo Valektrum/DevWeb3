@@ -4,7 +4,7 @@ echo ('<script type="text/javascript" src="/' . PATH_PUBLIC . '\js\addUser.js"><
 
 ?>
 
-<form class="needs-validation" novalidate>
+<form class="needs-validation" method="post" action="/user/addUser" novalidate>
   <div class="row">
     <div class="col-12 col-md-6">
       <div class="form-group">
@@ -29,8 +29,8 @@ echo ('<script type="text/javascript" src="/' . PATH_PUBLIC . '\js\addUser.js"><
         </div>
       </div>
       <div class="form-group">
-        <label for="telephone">Telephone</label>
-        <input class="form-control" id="telephone" name="telephone" required pattern="^[0-9]{7}([0-9]{3})?$">
+        <label for="phone_number">Telephone</label>
+        <input class="form-control" id="phone_number" name="phone_number" required pattern="^[0-9]{7}([0-9]{3})?$">
         <div class="invalid-feedback">
           Please provide a phone number with 7 or 10 digits.
         </div>

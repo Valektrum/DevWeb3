@@ -19,7 +19,7 @@
 })();
 
 function validateAge() {
-  if (document.getElementById("age").value > 18) {
+  if (document.getElementById("age").value >= 18) {
     document.getElementById("age").setCustomValidity("");
   } else {
 
