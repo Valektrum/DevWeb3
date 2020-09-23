@@ -1,7 +1,10 @@
 <?php
-session_start();
-        if(!isset($_SESSION["first_name"])){
-            header("Location: /exercice.php"); 
+    session_start();
+    if(!isset($_SESSION["username"]))
+    {
+        header("Location: /exercice.php"); 
 
-        }
+
+    }
+     echo "You're connected!";
     ?>
