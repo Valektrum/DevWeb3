@@ -1,6 +1,6 @@
 <VirtualHost *:80>
 	ServerName cours5.com
-	DocumentRoot "${INSTALL_DIR}/cours5"
+	DocumentRoot "${INSTALL_DIR}/www/cours5"
 	RewriteEngine on
  	RewriteCond %{HTTP_HOST} ^cours5.com
 	RewriteCond %{REQUEST_URI} !^public/.* [NC]	
